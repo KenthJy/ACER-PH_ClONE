@@ -181,6 +181,39 @@
         </ul>
 
         <button class="footer" id="myBtn" onclick="topFunction()">Back to Top</button>
+
+<div class="modal" id="modal">
+    <div class="modal-close-btn">
+        <button class="close-btn" id="close-btn" disabled>X</button>
+    </div>
+
+    <div class="inner-modal" id="inner-modal">
+            <h2>GET A FREE LAPTOP!</h2>
+            <p id="modal-text" class="modal-text">Sign-up and a get a free laptop within 24 hrs.</p>
+        <form id="form-content">
+                <input 
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="Enter your FullName"
+                aria-label="Full Name"
+                required />
+
+                <input 
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your password"
+                aria-label="Email Address"
+                required />
+
+            <div class="btn-container" id="modal-btns">
+                <button type="submit" class="modal-btn">Submit</button>
+                <button class="modal-btn" id="decline-btn">Decline</button>
+            </div>
+        </form>
+    </div>
+    </div>
     </main>
 </body>
 </html>

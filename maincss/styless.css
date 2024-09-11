@@ -230,5 +230,89 @@ h3{
 }   
 
 
+.modal{
+    display: none;
+    background-image: url('/images/wallpaperflare.com_wallpaper.jpg');
+    opacity: 0.99;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 40em;
+    height: 30em;
+    text-align: center;
+    border-radius: 2rem;
+    border: 5px solid white;
+}
 
 
+.modal h2{
+    color: white;
+    font-size:3rem ;
+    margin: 2rem;
+}
+
+.modal-display-name{
+    color: fuchsia;
+}
+.modal p {
+    color: white;
+}
+.modal-close-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem
+    
+}
+.close-btn{
+    border-radius: 50%;
+    padding:.2rem .5rem;
+    background: transparent;
+    border: none;
+    color: white;
+
+}
+.close-btn:disabled{
+    cursor: not-allowed;
+}
+.close-btn:hover{
+    color: red;
+}
+.inner-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-container{
+    display: flex;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+.btn-container button{
+    padding:.5rem;
+}
+
+#form-content{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+  
+}
+
+
+#form-content input{
+    margin: 1rem auto;
+    padding: .5rem;
+}
+
+
+.modal-btns-reverse{
+    flex-direction: row-reverse;
+}
