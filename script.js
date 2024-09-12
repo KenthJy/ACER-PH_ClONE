@@ -35,12 +35,13 @@ consentForm.addEventListener('submit', function(e){
   const fullName = consentFormData.get('fullName')
 
 
-  modal.innerHTML = `
+  modalText.innerHTML = `
      <div class="modal-inner-loading">
         <img src="/svgs/Spinner@1x-1.0s-200px-200px.svg" class="loading">
         <p id="upload-text">Uploading your data to the dark web...</p>
     </div>
   `
+  document.getElementById('form-content').style.display = "none"
 
   setTimeout(function(){
     document.getElementById('upload-text').innerText = `
@@ -49,11 +50,11 @@ consentForm.addEventListener('submit', function(e){
 
 
   setTimeout(function(){
-    document.getElementById('upload-text').innerHTML = `
+    document.getElementById('inner-modal').innerHTML = `
        <h2>Thanks <span class="modal-display-name">${fullName}</span> for those information, There is no such thing as free Laptop :) </h2>
       <p>See you in your house 👋.</p>
     `
-    document.querySelector('.loading').style.display = "none"
+  
     closeBtn.disabled = false
   }, 4000);
 })
